@@ -4,13 +4,12 @@ module.exports = {
       id: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        autoIcrement: true,
-        primeryKey: true,
+        autoIncrement: true,
+        primaryKey: true,
       },
       nome: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true,
       },
       email: {
         type: Sequelize.STRING,
@@ -20,17 +19,14 @@ module.exports = {
       idade: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        unique: true,
       },
       peso: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        unique: true,
       },
       altura: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        unique: true,
       },
       created_at: {
         type: Sequelize.DATE,
